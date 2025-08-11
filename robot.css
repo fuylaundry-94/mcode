@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+.robody {
+    max-width: 450px;
+    min-height: 580px;
+    margin: auto;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px var(--shadow);
+    background: var(--bg);
+    color: var(--cl);
+    position: relative;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+.head {
+    width: auto;
+    background: var(--bg2);
+    padding: 10px;
+    padding-left: 15px;
+    line-height: 1.2;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    letter-spacing: 0.5;
+}
+
+.ritem2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.ritem2 div {
+    width: fit-content;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.ritem3 {
+    width: fit-content;
+    font-size: 12px;
+    font-weight: 300;
+
+}
+
+.grid {
+    width: auto;
+    background: var(--gbg);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    grid-auto-rows: minmax(135px, auto);
+}
+.g1 input[type=checkbox] {
+    display: none
+}
+  
+.g1 img {
+    width: 138px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+  
+.g1 input[type=checkbox]:checked~img {
+    transform: scale(0.9);
+    cursor: pointer
+}
+
+.g2 input[type=checkbox] {
+    display: none
+}
+  
+.g2 img {
+    width: 138px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+  
+.g2 input[type=checkbox]:checked~img {
+    transform: scale(0.9);
+    cursor: pointer
+}
+
+.g3 input[type=checkbox] {
+    display: none
+}
+  
+.g3 img {
+    width: 138px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+  
+.g3 input[type=checkbox]:checked~img {
+    transform: scale(0.9);
+    cursor: pointer
+}
+
+.g4 input[type=checkbox] {
+    display: none
+}
+  
+.g4 img {
+    width: 138px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+  
+.g4 input[type=checkbox]:checked~img {
+    transform: scale(0.9);
+    cursor: pointer
+}
+
+.g5 input[type=checkbox] {
+    display: none
+}
+  
+.g5 img {
+    width: 138px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+  
+.g5 input[type=checkbox]:checked~img {
+    transform: scale(0.9);
+    cursor: pointer
+}
+
+.g6 input[type=checkbox] {
+    display: none
+}
+  
+.g6 img {
+    width: 138px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+  
+.g6 input[type=checkbox]:checked~img {
+    transform: scale(0.9);
+    cursor: pointer
+}
+
+.g7 input[type=checkbox] {
+    display: none
+}
+  
+.g7 img {
+    width: 138px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+  
+.g7 input[type=checkbox]:checked~img {
+    transform: scale(0.9);
+    cursor: pointer
+}
+
+.g8 input[type=checkbox] {
+    display: none
+}
+  
+.g8 img {
+    width: 138px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+  
+.g8 input[type=checkbox]:checked~img {
+    transform: scale(0.9);
+    cursor: pointer
+}
+
+.g9 input[type=checkbox] {
+    display: none
+}
+  
+.g9 img {
+    width: 138px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+  
+.g9 input[type=checkbox]:checked~img {
+    transform: scale(0.9);
+    cursor: pointer
+}
+
+
+.bottom {
+    padding-top: 10px;
+    border-top: 1px solid var(--bdt);
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.l1 {
+    min-width: auto;
+    aspect-ratio: 1/1;
+    background: var(--l1pic);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.l2 {
+    width: auto;
+    aspect-ratio: 1/1;
+    background: var(--l2pic);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.l3 {
+    width: auto;
+    aspect-ratio: 1/1;
+    background: var(--l3pic);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.right {
+    width: fit-content;
+    height: fit-content;
+    padding: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: var(--bg3);
+    border-radius: 2px;
+    text-align: center;
+}
+
+.bt {
+    margin: auto;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5;
+}
+
+.bt a {
+    text-decoration: none;
+    color: var(--cl2);
+}
+
+.hancr {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}    
+    
+.hancr a {
+    color: #727272;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 5px;
+    letter-spacing: 1;
+    text-decoration: none;
+}
