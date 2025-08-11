@@ -1,0 +1,394 @@
+@font-face {
+    font-family: "CPCompany";
+    src: url("https://db.onlinewebfonts.com/t/3dfaf588d85b54b0424921b80cbc7d65.eot");
+    src: url("https://db.onlinewebfonts.com/t/3dfaf588d85b54b0424921b80cbc7d65.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3dfaf588d85b54b0424921b80cbc7d65.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3dfaf588d85b54b0424921b80cbc7d65.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3dfaf588d85b54b0424921b80cbc7d65.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3dfaf588d85b54b0424921b80cbc7d65.svg#CPCompanyFlashBig W03 Regular")format("svg");
+}
+
+@font-face {
+    font-family: "Timebomb";
+    src: url("https://fuylaundry-94.github.io/noname/TickingTimebombBB.ttf") format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+:root {
+    --neon-color: #e8f8ff;
+    --neon-shadow: #4385ff;
+    --radio-maincolor: #9fc0ff;
+    --mainradiopic: url(https://iili.io/3InyXV4.jpg) center/cover;
+    --recent-box1-pic: url(https://iili.io/3InyXV4.jpg) center/cover;
+    --recent-box2-pic: url(https://iili.io/3InyXV4.jpg) center/cover;
+    --recent-box3-pic: url(https://iili.io/3InyXV4.jpg) center/cover;
+    --recent-box4-pic: url(https://iili.io/3InyXV4.jpg) center/cover;
+}
+
+.radiocon {
+    max-width: 600px;
+    margin: auto;
+    padding: 0.875rem;
+    border-radius: 23px;
+    background: #c6c6c6;
+    box-shadow:  rgba(23, 24, 24, 0.35) 0px -2px 6px 0px inset;
+    display: grid;
+    grid-template-columns: 3rem 12rem 1fr;
+    grid-template-rows: 3rem 1fr 3rem;
+    gap: 8px;
+    position: relative;
+    z-index: 0;
+    aspect-ratio: 16/7.5;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.power {
+    aspect-ratio: 1/1;
+    background: linear-gradient(to bottom, #a6a6a6 27%, #666666 100%);
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    align-content: center;
+    justify-items: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.power-o {
+    width: 75%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: linear-gradient(to bottom, #8d8d8d 27%, #9d9d9d 100%);
+    border-radius: 50%;
+    align-content: center;
+    justify-items: center;
+}
+
+.power-icon {
+    width: 48%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: url(https://iili.io/3u0wnna.png) center/cover;
+    background-repeat: no-repeat;
+}
+
+.bar {
+    background: #000;
+    border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    align-content: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+@keyframes slideText {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.name {
+    width: 100%;
+    padding-top: 0.4rem;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    font: 2rem Timebomb;
+    color: var(--neon-color);
+    text-shadow:  0 0 0.5em var(--neon-shadow), 0 0 0.1em var(--neon-shadow);
+    animation: slideText 10s linear infinite;
+    position: relative;
+}
+
+.mainpic {
+    border: 2px solid #000;
+    border-radius: 8px;
+    background: var(--mainradiopic);
+    background-repeat: no-repeat;
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+}
+
+.screen {
+    border-radius: 8px;
+    position: relative;
+    background: #000;
+    padding: 0.594rem;
+    grid-column: 3 / 4;
+    grid-row: 1 /3 ;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    row-gap: 0.1rem;
+}
+
+.h1 {
+    width: 100%;
+    grid-row: 1 / 2;
+    display: flex;
+    gap: 0.5vw;
+}
+
+.disc {
+    width: 1rem;
+    min-width: 15px;
+    aspect-ratio: 1/1;
+    position: relative;
+    background: url(https://iili.io/3u093oF.png) center/cover;
+    background-repeat: no-repeat;
+}
+
+.np {
+    display: flex;
+    align-items: center;
+    font: 0.7rem CPCompany;
+    text-align: left;
+    color: #8f8f8f;
+    position: relative;
+}
+
+.h2 {
+    width: 100%;
+    display: flex;
+    grid-row: 2 / 3;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+
+.music {
+    font: 1.25rem CPCompany;
+    font-weight: 500;
+    text-align: left;
+    color: var(--neon-color);
+    text-shadow:  0 0 0.5em var(--neon-shadow), 0 0 0.1em var(--neon-shadow);
+    position: relative;
+}
+
+.artist {
+    font: 0.8rem CPCompany;
+    text-align: left;
+    color: var(--radio-maincolor);
+    position: relative;
+}
+
+.h3 {
+    width: 100%;
+    grid-row: 3/ 4;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.recent {
+    display: flex;
+    align-items: center;
+    font: 0.7rem CPCompany;
+    text-align: left;
+    color: #8f8f8f;
+    position: relative;
+}
+
+.con {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.4rem;
+}
+
+.recent-box1 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    grid-column: 1 / 2;
+    border-radius: 3px;
+    background: var(--recent-box1-pic) ;
+    background-repeat: no-repeat;
+}
+
+.recent-box2 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    grid-column: 2 / 3;
+    border-radius: 3px;
+    background: var(--recent-box2-pic) ;
+    background-repeat: no-repeat;
+}
+
+.recent-box3 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    grid-column: 3 / 4;
+    border-radius: 3px;
+    background: var(--recent-box3-pic) ;
+    background-repeat: no-repeat;
+}
+.recent-box4 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    grid-column: 4 / 5;
+    border-radius: 3px;
+    background: var(--recent-box4-pic) ;
+    background-repeat: no-repeat;
+}
+
+.control {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 9rem 4rem; 
+    gap: 1vw;
+}
+
+.line {
+    width: 100%;
+    grid-column: 1 / 2;
+    background: url(https://iili.io/3T80pI9.png) center/90%;
+    background-repeat: no-repeat;
+}
+
+.mid-botton {
+    width: 100%;
+    border-radius: 10px;
+    background: #3d3d3d;
+    border: 2px solid #3d3d3d;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 2 / 3;
+    box-sizing: border-box;
+    column-gap: 0.2rem;
+  
+}
+
+.previous {
+    grid-column: 1 / 2;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #a6a6a6 27%, #666666 100%);
+    align-content: center;
+    justify-items: center;
+}
+
+.pv-o {
+    width: 85%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: linear-gradient(to bottom, #8d8d8d 27%, #9d9d9d 100%);
+    border-radius: 50%;
+    align-content: center;
+    justify-items: center;
+}
+
+.pv-icon {
+    width: 40%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: url(https://iili.io/3u0X6ts.png) center/cover;
+    background-repeat: no-repeat;
+}
+
+.pause {
+    grid-column: 2 / 3;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #a6a6a6 27%, #666666 100%);
+    align-content: center;
+    justify-items: center;
+}
+
+.p-o {
+    width: 85%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: linear-gradient(to bottom, #8d8d8d 27%, #9d9d9d 100%);
+    border-radius: 50%;
+    align-content: center;
+    justify-items: center;
+}
+
+.p-icon {
+    width: 40%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: url(https://iili.io/3u0XoG4.png) center/cover;
+    background-repeat: no-repeat;
+}
+
+.next {
+    grid-column: 3 / 4;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #a6a6a6 27%, #666666 100%);
+    align-content: center;
+    justify-items: center;
+}
+
+.n-o {
+    width: 85%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: linear-gradient(to bottom, #8d8d8d 27%, #9d9d9d 100%);
+    border-radius: 50%;
+    align-content: center;
+    justify-items: center;
+}
+
+.n-icon {
+    width: 40%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: url(https://iili.io/3u0Wl2I.png) center/cover;
+    background-repeat: no-repeat;
+}
+
+.favorite {
+    border: 1px solid #3d3d3d;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #a6a6a6 27%, #666666 100%);
+    align-content: center;
+    justify-items: center;
+}
+
+.fv-o {
+    width: 75%;
+    aspect-ratio: 4/3;
+    margin: auto;
+    background: linear-gradient(to bottom, #8d8d8d 27%, #9d9d9d 100%);
+    border-radius: 50%;
+    align-content: center;
+    justify-items: center;
+}
+
+.heart {
+    width: 30%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: var(--radio-maincolor);
+    mask: url(https://iili.io/3u09JwP.png) center/cover no-repeat;
+    -webkit-mask: url(https://iili.io/3u09JwP.png) center/cover no-repeat;
+}
+
+.radio-text {
+    max-width: 600px;
+    margin: auto;
+    padding: 2.2rem 0rem 2rem 0rem;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.tt {
+    font: 1rem Bai Jamjuree;
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: normal;
+    font-weight: 300;
+    text-align: justify;  
+    color: #fff;
+    padding-bottom: 1.8rem;
+}
+
+.r-note {
+    color: var(--radio-maincolor);
+    font: 1rem Bai Jamjuree;
+    letter-spacing: 0.6px;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,396 @@
+@font-face {
+    font-family: "CPCompany";
+    src: url("https://db.onlinewebfonts.com/t/3dfaf588d85b54b0424921b80cbc7d65.eot");
+    src: url("https://db.onlinewebfonts.com/t/3dfaf588d85b54b0424921b80cbc7d65.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3dfaf588d85b54b0424921b80cbc7d65.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3dfaf588d85b54b0424921b80cbc7d65.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3dfaf588d85b54b0424921b80cbc7d65.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3dfaf588d85b54b0424921b80cbc7d65.svg#CPCompanyFlashBig W03 Regular")format("svg");
+}
+
+@font-face {
+    font-family: "Timebomb";
+    src: url("https://fuylaundry-94.github.io/noname/TickingTimebombBB.ttf") format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --neon-color: #e8f8ff;
+    --neon-shadow: #4385ff;
+    --bradio-maincolor: #9fc0ff;
+    --mainradiopic: url(https://iili.io/3InyXV4.jpg) center/cover;
+    --recent-box1-pic: url(https://iili.io/3InyXV4.jpg) center/cover;
+    --recent-box2-pic: url(https://iili.io/3InyXV4.jpg) center/cover;
+    --recent-box3-pic: url(https://iili.io/3InyXV4.jpg) center/cover;
+    --recent-box4-pic: url(https://iili.io/3InyXV4.jpg) center/cover;
+}
+
+.b-radiocon {
+    max-width: 600px;
+    margin: auto;
+    padding: 0.875rem;
+    border-radius: 23px;
+    background: #2b2c31;
+    box-shadow:  rgba(23, 24, 24, 0.35) 0px -2px 6px 0px inset;
+    display: grid;
+    grid-template-columns: 3rem 12rem 1fr;
+    grid-template-rows: 3rem 1fr 3rem;
+    gap: 8px;
+    position: relative;
+    z-index: 0;
+    aspect-ratio: 16/7.5;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.b-power {
+    aspect-ratio: 1/1;
+    background: linear-gradient(to bottom, #47484d 27%, #303134 100%);
+    border: 1px solid #000;
+    border-radius: 50%;
+    align-content: center;
+    justify-items: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.b-power-o {
+    width: 75%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: linear-gradient(to bottom, #38383b 27%, #414246 100%);
+    border-radius: 50%;
+    align-content: center;
+    justify-items: center;
+}
+
+.b-power-icon {
+    width: 48%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: url(https://iili.io/3u0999V.png) center/cover;
+    background-repeat: no-repeat;
+}
+
+.b-bar {
+    background: #000;
+    border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    align-content: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+@keyframes slideText {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.b-name {
+    width: 100%;
+    padding-top: 0.4rem;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    font: 2rem Timebomb;
+    color: var(--neon-color);
+    text-shadow:  0 0 0.5em var(--neon-shadow), 0 0 0.1em var(--neon-shadow);
+    animation: slideText 10s linear infinite;
+    position: relative;
+}
+
+.b-mainpic {
+    border: 2px solid #000;
+    border-radius: 8px;
+    background: var(--mainradiopic);
+    background-repeat: no-repeat;
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+}
+
+.b-screen {
+    border-radius: 8px;
+    position: relative;
+    background: #000;
+    padding: 0.594rem;
+    grid-column: 3 / 4;
+    grid-row: 1 /3 ;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    row-gap: 0.1rem;
+}
+
+.bh1 {
+    width: 100%;
+    grid-row: 1 / 2;
+    display: flex;
+    gap: 0.5vw;
+}
+
+.b-disc {
+    width: 1rem;
+    min-width: 15px;
+    aspect-ratio: 1/1;
+    position: relative;
+    background: url(https://iili.io/3u093oF.png) center/cover;
+    background-repeat: no-repeat;
+}
+
+.bnp {
+    display: flex;
+    align-items: center;
+    font: 0.7rem CPCompany;
+    text-align: left;
+    color: #8f8f8f;
+    position: relative;
+}
+
+.bh2 {
+    width: 100%;
+    display: flex;
+    grid-row: 2 / 3;
+    flex-direction: column;
+    gap: 0.125;
+}
+
+.b-music {
+    font: 1.25rem CPCompany;
+    font-weight: 500;
+    text-align: left;
+    color: var(--neon-color);
+    text-shadow:  0 0 0.5em var(--neon-shadow), 0 0 0.1em var(--neon-shadow);
+    position: relative;
+}
+
+.b-artist {
+    font: 0.8rem CPCompany;
+    text-align: left;
+    color: var(--bradio-maincolor);
+    position: relative;
+}
+
+.bh3 {
+    width: 100%;
+    grid-row: 3/ 4;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.b-recent {
+    display: flex;
+    align-items: center;
+    font: 0.7rem CPCompany;
+    text-align: left;
+    color: #8f8f8f;
+    position: relative;
+}
+
+.bcon {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.4rem;
+}
+
+.brecent-box1 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    grid-column: 1 / 2;
+    border-radius: 3px;
+    background: var(--recent-box1-pic) ;
+    background-repeat: no-repeat;
+}
+
+.brecent-box2 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    grid-column: 2 / 3;
+    border-radius: 3px;
+    background: var(--recent-box2-pic) ;
+    background-repeat: no-repeat;
+}
+
+.brecent-box3 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    grid-column: 3 / 4;
+    border-radius: 3px;
+    background: var(--recent-box3-pic) ;
+    background-repeat: no-repeat;
+}
+.brecent-box4 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    grid-column: 4 / 5;
+    border-radius: 3px;
+    background: var(--recent-box4-pic) ;
+    background-repeat: no-repeat;
+}
+
+.bcontrol {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 9rem 4rem; 
+    gap: 1vw;
+}
+
+.b-line {
+    width: 100%;
+    grid-column: 1 / 2;
+    background: url(https://iili.io/3u36OYB.png) center/90%;
+    background-repeat: no-repeat;
+}
+
+.bmid-botton {
+    width: 100%;
+    border-radius: 10px;
+    background: #000000;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 2 / 3;
+    column-gap: 0.2rem;
+}
+
+.bprevious {
+    grid-column: 1 / 2;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #47484d 27%, #303134 100%);
+    align-content: center;
+    justify-items: center;
+}
+
+.bpv-o {
+    width: 85%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: linear-gradient(to bottom, #38383b 27%, #414246 100%);
+    border-radius: 50%;
+    align-content: center;
+    justify-items: center;
+}
+
+.bpv-icon {
+    width: 40%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: url(https://iili.io/3u09HAB.png) center/cover;
+    background-repeat: no-repeat;
+}
+
+.bpause {
+    grid-column: 2 / 3;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #47484d 27%, #303134 100%);
+    align-content: center;
+    justify-items: center;
+}
+
+.bp-o {
+    width: 85%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: linear-gradient(to bottom, #38383b 27%, #414246 100%);
+    border-radius: 50%;
+    align-content: center;
+    justify-items: center;
+}
+
+.bp-icon {
+    width: 40%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: url(https://iili.io/3ulyt6b.png) center/cover;
+    background-repeat: no-repeat;
+}
+
+.bnext {
+    grid-column: 3 / 4;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #47484d 27%, #303134 100%);
+    align-content: center;
+    justify-items: center;
+}
+
+.bn-o {
+    width: 85%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: linear-gradient(to bottom, #38383b 27%, #414246 100%);
+    border-radius: 50%;
+    align-content: center;
+    justify-items: center;
+}
+
+.bn-icon {
+    width: 40%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: url(https://iili.io/3ulyp8Q.png) center/cover;
+    background-repeat: no-repeat;
+}
+
+.bfavorite {
+    border: 1px solid #000000;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #47484d 27%, #303134 100%);
+    align-content: center;
+    justify-items: center;
+}
+
+.bfv-o {
+    width: 75%;
+    aspect-ratio: 4/3;
+    margin: auto;
+    background: linear-gradient(to bottom, #38383b 27%, #414246 100%);
+    border-radius: 50%;
+    align-content: center;
+    justify-items: center;
+}
+
+.bheart {
+    width: 30%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background: var(--bradio-maincolor);
+    mask: url(https://iili.io/3u09JwP.png) center/cover no-repeat;
+    -webkit-mask: url(https://iili.io/3u09JwP.png) center/cover no-repeat;
+}
+
+.b-radio-text {
+    max-width: 600px;
+    margin: auto;
+    padding: 2.2rem 0rem 2rem 0rem;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.btt {    
+    font: 1rem Bai Jamjuree;
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: normal;
+    font-weight: 300;
+    text-align: justify;  
+    color: #fff;
+    padding-bottom: 1.8rem;
+}
+
+.b-note {
+    color: var(--bradio-maincolor);
+    font: 1rem Bai Jamjuree;
+    letter-spacing: 0.6px;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
+}
