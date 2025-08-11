@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+Thai:wght@100..900&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+@font-face {
+    font-family: "Garet Book";
+    src: url("https://fuylaundry-94.github.io/noname/Garet-Book.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Garet W05 Bold";
+    src: url("https://fuylaundry-94.github.io/noname/GaretW05Bold.ttf") format("truetype");
+}
+:root {
+    --oobox-oscl: linear-gradient(to bottom, #f7ffd8 45%, #91b24e 100%);
+    --oobox-iscl: linear-gradient(to top, #f7ffd8 45%, #91b24e 100%);
+    --oobox-tag: #91b24e;
+    --oobox-pic: url(https://iili.io/30FkoAJ.png) center 90%/85%;
+}
+.oo-con {
+    width: 100%;
+    max-width: 880.89px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    background: #000;
+    color: #fff;
+    display: grid;
+    grid-row: auto auto auto;
+}
+
+.oo-top {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.897) 20%, transparent 100%),
+    url(https://iili.io/30dnYsj.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    mask: linear-gradient(to bottom, black 75%, transparent 100%); 
+    -webkit-mask: linear-gradient(to bottom, black 75%, transparent 100%);
+    position: relative;
+    z-index: 1;
+}
+
+.oo-gd {
+    box-sizing: border-box;
+    padding: 4vw 0vw 3vw 4vw;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font: 1.1vw "Garet Book", "Prompt";
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.oo-title {
+    font: 6.5vw "Garet W05 Bold", "Prompt";
+    letter-spacing: 0.6px;
+}
+
+.oo-title-sub {
+    letter-spacing: 0.6px;
+    margin-top: 0.7vw;
+}
+
+.oo-discord {
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 0.12rem 0.8rem 0.12rem 0.8rem;
+    background: #fff;
+    border-radius: 20px;
+}
+.o-discord {
+    font-size: 1.1vw;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+}
+
+.oo-mid {
+    box-sizing: border-box;
+    padding: 3vw 4vw 2vw 4vw;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background: linear-gradient(to top, #000000, #333333, #000000);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr));
+    grid-template-rows: auto auto auto auto auto;
+    gap: 1rem;
+    overflow-x: auto;
+}
+
+.oo-mid-item {
+    box-sizing: border-box;
+    aspect-ratio: 1/1;
+    background: var(--oobox-oscl);
+    border-radius: 23px;
+    padding: 0.6rem;
+}
+
+.oo-mid-item2 {
+    box-sizing: border-box;
+    grid-row: span 1;
+    aspect-ratio: 1/1;
+    background: var(--oobox-oscl);
+    border-radius: 23px;
+    padding: 0.6rem;
+}
+
+.oo-mid-item3 {
+    box-sizing: border-box;
+    grid-row: span 1;
+    aspect-ratio: 1/1;
+    background: var(--oobox-oscl);
+    border-radius: 23px;
+    padding: 0.6rem;
+}
+
+.oo-mid-item4 {
+    box-sizing: border-box;
+    grid-row: span 1;
+    aspect-ratio: 1/1;
+    background: var(--oobox-oscl);
+    border-radius: 23px;
+    padding: 0.6rem;
+}
+
+.oo-mid-item5 {
+    box-sizing: border-box;
+    grid-row: span 1;
+    aspect-ratio: 1/1;
+    background: var(--oobox-oscl);
+    border-radius: 23px;
+    padding: 0.6rem;
+}
+
+.oo-mid-item6 {
+    box-sizing: border-box;
+    grid-row: span 1;
+    aspect-ratio: 1/1;
+    background: var(--oobox-oscl);
+    border-radius: 23px;
+    padding: 0.6rem;
+}
+
+.oo-mid-itemm {
+    background: var(--oobox-iscl);
+    border-radius: 13px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.oo-mid-item-top {
+    box-sizing: border-box;
+    padding: 0.5rem;
+    padding-bottom: 0rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.5px;
+}
+.o-left {
+    font: 1.6vw "Garet W05 Bold";
+    text-align: left;
+}
+.o-right {
+    font: 1.6vw "Garet W05 Bold";
+    text-align: right;
+}
+.o-right div {
+    margin-top: -0.2rem;
+    font: bold 0.65vw "Garet Book";
+    text-align: right;
+    letter-spacing: 0.5px;
+}
+.o-pic {
+    aspect-ratio: 1/1;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    background: var(--oobox-pic) no-repeat;
+}
+.o-tag {
+    box-sizing: border-box;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    padding: 0.5rem;
+    padding-top: 0rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+.o-tagg {
+    box-sizing: border-box;
+    font: bold 0.8vw "Garet Book";
+    text-align: center;
+    background: var(--oobox-tag);
+    color: #fff;
+    border-radius: 20px;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    letter-spacing: 0.45px;
+}
+
+.oo-about {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-left: 1.2vw;
+    box-sizing: border-box;
+   
+}
+
+.oo-ab1 {
+    width: fit-content;
+    font: bold 1.4vw "Garet Book";
+    padding: 0rem 0.6rem 0rem 0.6rem;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    text-align: left;
+    overflow: auto;
+    text-wrap: nowrap;
+}
+
+.oo-ab2-con {
+    text-align: justify;
+    aspect-ratio: 16/5; 
+    overflow-y: scroll; 
+    scrollbar-width: none; 
+    mask: linear-gradient(to bottom, black 85%, transparent 110%); 
+    -webkit-mask: linear-gradient(to bottom, black 85%, transparent 110%);
+}
+
+.oo-ab2 {
+    font: 300 1.1vw "Prompt";
+    text-align: left;
+    word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.oo-note {
+    box-sizing: border-box;
+    grid-column: span 2;
+    grid-row: 4 / 5;
+    font: 300 1.1vw "Prompt";
+    padding-top: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+.oo-note1 {
+    width: fit-content;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1.2vw;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    letter-spacing: 0.6px;
+    box-sizing: border-box;
+     overflow: auto;
+    text-wrap: nowrap;
+}
+
+.oo-note2-con {
+    aspect-ratio: 16/5; 
+    overflow-y: scroll; 
+    scrollbar-width: none;
+     mask: linear-gradient(to bottom, black 85%, transparent 110%); 
+    -webkit-mask: linear-gradient(to bottom, black 85%, transparent 110%);
+}
+
+.oo-note2 {
+    text-align: justify;
+
+}
+
+.oo-icon {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.oo-icon-w {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.oo-icon1 {
+    width: 100%;
+    grid-column: 1 / 2;
+    aspect-ratio: 1/1;
+    background: #fff;
+    mask: url(https://iili.io/30qN4vn.png) center/80% no-repeat;
+    -webkit-mask: url(https://iili.io/30qN4vn.png) center/80% no-repeat;
+}
+
+.oo-icon2 {
+    width: 100%;
+    grid-column: 2 / 3;
+    aspect-ratio: 1/1;
+    background: #fff;
+    mask: url(https://iili.io/30qNrYX.png) center/80% no-repeat;
+    -webkit-mask: url(https://iili.io/30qNrYX.png) center/80% no-repeat;
+}
+
+.oo-icon3 {
+    width: 100%;
+    grid-column: 3 / 4;
+    aspect-ratio: 1/1;
+    background: #fff;
+    mask: url(https://iili.io/3aqfe0G.png) center/75% no-repeat;
+    -webkit-mask: url(https://iili.io/3aqfe0G.png) 50% 60%/75% no-repeat;
+}
