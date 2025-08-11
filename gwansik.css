@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+    --gwbg-pic: url(https://iili.io/3cSuuQs.jpg);
+    --gwtitle-size: 3.25vw;
+    --gwcover-pic: url(https://iili.io/3cSua3l.jpg) center/cover;
+    --gwpic-1: url(https://iili.io/3cSu5Gf.jpg) center/cover;
+    --gwpic-2: url(https://iili.io/3cSuxpt.jpg) center/cover;
+    --gwpic-3: url(https://iili.io/3cSuITX.jpg) center/cover;
+   
+}
+
+.gwansik-con {
+    width: 100%;
+    max-width: 880.89px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    background: #000;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    color: #fff;
+}
+
+.gw-head {
+    grid-row: 1 / 2;
+    padding: 3.5rem 3rem 6rem 3rem;
+    background-image: 
+        linear-gradient(to right, black 20%, transparent 100%),
+        var(--gwbg-pic);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 35%;
+    grid-template-rows: auto 1fr auto;
+    gap: 1.2vw;
+    position: relative;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.gw-title{
+    display: flex;
+    align-items: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font: var(--gwtitle-size, 3.5vw)  "Prompt";
+    font-weight: 600;
+    line-height: 1.36;
+    letter-spacing: 1px;
+}
+
+.gw-info {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font: 1.1vw  "Prompt";
+    font-weight: 300;
+    line-height: 1.35;
+    letter-spacing: 0.7px;
+}
+
+.gw-info span {
+    font-weight: 500;
+}
+
+.gw-tag {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.gw-tagg {
+    font: 1vw  "Prompt";
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+
+.gw-cover {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    aspect-ratio: 5/7;
+    box-shadow: -3px 3px 15px #000000;
+    background: var(--gwcover-pic) no-repeat;
+}
+
+.gw-mid {
+    grid-row: 2 / 3;
+    margin-top: -2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.7rem;
+    position: relative;
+    background: linear-gradient(to top, black 80%, transparent 100%);
+}
+
+.gw-mid-img1 {
+    width: 100%;
+    aspect-ratio: 4/2.7;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background: var(--gwpic-1) no-repeat;
+}
+
+.gw-mid-img2 {
+    aspect-ratio: 4/2.7;
+    width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background: var(--gwpic-2) no-repeat;
+}
+
+.gw-mid-img3 {
+    aspect-ratio: 4/2.7;
+    width: 100%;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    background: var(--gwpic-3) no-repeat;
+}
+
+.gw-bt {
+    grid-row: 3 / 4;
+    padding: 3rem 3rem 3rem 3rem;
+    position: relative;
+}
+
+.gw-bt-top {
+    display: grid;
+    grid-template-columns: 55% 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.8rem;
+}
+
+.gw-cast {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font: 1.5rem  "Prompt";
+    font-weight: 600;
+    letter-spacing: 1.2px;
+
+}
+
+.gw-cast-box {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 94%;
+    border-bottom: 1px solid #3d3d3d;
+    overflow-x: auto;
+    white-space: nowrap;
+    box-sizing: border-box;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    font: 0.85rem  "Prompt";
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+    mask: linear-gradient(to right, black 89%, transparent 100%); 
+    -webkit-mask: linear-gradient(to right, black 89%, transparent 100%);
+}
+
+.gw-cast-box::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.gw-cast-box::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.gw-cast-box::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.gw-cast-box::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.35); 
+}
+
+.gw-cast-scroll {
+    display: inline-flex;
+    gap: 1.5rem;
+}
+
+.gw-cast-item {
+    width: 6.8rem;
+    aspect-ratio: 5/4.5;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.gw-cast-item-pic {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: var(--gwitem-pic) center/cover no-repeat;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.gw-cast-item-text {
+    font-weight: 300;
+    text-align: center;
+    font-size: 0.75rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    line-height: 1.3;
+}
+
+.gw-cast-item-text div {
+    font-weight: 500;
+    font-size: var(--gw-cf-size, 1rem);
+    margin-bottom: 0.2rem;
+}
+
+.trailer {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font: 1.5rem  "Prompt";
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.gw-yt {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 5px;
+}
+
+.gw-bt-mid {
+    height: auto;
+    padding-top: 3.2rem;
+}
+
+.gw-btm-rv {
+    padding-top: 1.3rem;
+    font: 1.5rem "Prompt"; 
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    border-bottom: 1px solid #3d3d3d;
+}
+
+.gw-bt-mid p {
+    font: 1rem Bai Jamjuree; 
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.gw-bt-fav {
+    padding-top: 3.8rem;
+    display: grid;
+    grid-template-columns: 1fr 50%;
+    gap: 0.8rem;
+    position: relative;
+}
+
+.fav-ost {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font: 1.5rem  "Prompt";
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.gw-yt-fav {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 5px;
+    mask: linear-gradient(to right, black 50%, transparent 100%); 
+    -webkit-mask: linear-gradient(to right, black 50%, transparent 100%);
+}
+
+.gw-btf-rv {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    aspect-ratio: 4/2.35; 
+    overflow-y: scroll; 
+    scrollbar-width: none; 
+    font: var(--ostn, 2.6vw)  "Prompt";
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-align: left;
+    line-height: 1;
+}
+
+.gw-btf-rv h2 {
+    font-size: 1.2vw;
+    letter-spacing: 1px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.gw-btf-rv p {
+    font: 1.2vw "Bai Jamjuree";
+    text-align: justify;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.6;
+}
