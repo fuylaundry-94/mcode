@@ -1,0 +1,267 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,300;0,400&display=swap');
+@font-face {
+    font-family: "Garet Book";
+    src: url("https://fuylaundry-94.github.io/noname/Garet-Book.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Garet W05 Bold";
+    src: url("https://fuylaundry-94.github.io/noname/GaretW05Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "vivaldi";
+    src: url("https://fuylaundry-94.github.io/noname/VIVALDII.TTF") format("truetype");
+}
+:root {
+    --proline: #000;
+    --profont: #000;
+    --prosfont: #fff;
+    --probg: #fff;
+    --promcl: #83282d;
+    --prohpic: url(https://iili.io/FqZexqX.jpg);
+    --prohfcl: #fff;
+    --prohgd: linear-gradient( #83282de8, #83282de8);
+    --prompic: url(https://iili.io/FqZeA7f.jpg) center/cover;
+    --prospic: url(https://iili.io/FqZez1n.jpg) center/cover;
+}
+.pro-con {
+    width: 60%;
+    margin: auto;
+    margin-top: 4.5vw;
+    box-sizing: border-box;
+    border: 1px solid var(--proline);
+    background: var(--probg);
+    color: var(--profont);
+    padding: 0.9vw;
+    font: 300 1vw "Garet Book", "Prompt";
+    letter-spacing: 0.3px;
+
+}
+.pro-subc {
+    box-sizing: border-box;
+    border: 1px solid var(--proline);
+}
+.pro-head {
+    color: var(--prohfcl);
+    font: 7vw "vivaldi";
+    background-image: 
+    var(--prohgd),
+    var(--prohpic);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 1.9vw 2vw 1.7vw 2vw;
+}
+.pro-tab1 {
+    display: grid;
+    grid-template-columns: 1fr 5.5fr 1fr;
+    border-top: 1px solid var(--proline);
+    box-sizing: border-box;
+}
+.pro-stab1 {
+    border-right: 1px solid var(--proline);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.pro-stab2 {
+    border-right: 1px solid var(--proline);
+    box-sizing: border-box;
+    padding: 1vw 1.5vw 1vw 1.5vw;
+}
+.pro-stab3 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.pro-tab2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 1px solid var(--proline);
+    box-sizing: border-box;
+}
+.pro-bg {
+    padding: 1vw 0vw 1vw 0vw;
+    text-align: center;
+    text-decoration: none;
+    border-right: 1px solid var(--proline);
+    box-sizing: border-box;
+    color: var(--profont);
+}
+.pro-bg:hover {
+    background-color: var(--promcl);
+    color: var(--prosfont);
+}
+.pro-pf {
+    padding: 1vw 0vw 1vw 0vw;
+    text-align: center;
+    text-decoration: none;
+    border-right: 1px solid var(--proline);
+    box-sizing: border-box;
+    color: var(--prosfont);
+    background-color: #000;
+}
+.pro-pf:hover {
+    background-color: var(--promcl);
+    color: var(--prosfont);
+}
+.pro-mc {
+    padding: 1vw 0vw 1vw 0vw;
+    text-align: center;
+    text-decoration: none;
+    color: var(--proline);
+}
+.pro-mc:hover {
+    background-color: var(--promcl);
+    color: var(--prosfont);
+}
+.pro-picc {
+    border-top: 1px solid var(--proline);
+    box-sizing: border-box;
+    padding: 0.9vw;
+    background: var(--promcl);
+}
+.pro-pic {
+    border: 1px solid var(--proline);
+    box-sizing: border-box;
+    aspect-ratio: 16/13;
+    background: var(--prompic) no-repeat;
+}
+.pro-stt {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    font-size: 1.23vw;
+    border-top: 1px solid var(--proline);
+}
+.pro-st {
+    padding: 1vw;
+    border-right: 1px solid var(--proline);
+    box-sizing: border-box;
+    color: var(--promcl);
+    text-align: center;
+}
+.pro-send {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: var(--proline);
+    color: var(--prosfont);
+    font-size: 1.7vw;
+}
+.pro-pl {
+    box-sizing: border-box;
+    border-top: 1px solid var(--proline);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vw;
+    padding: 1.3vw 2.4vw 1.3vw 2.4vw;
+}
+.pro-pl1 {
+    box-sizing: border-box;
+    border: 1px solid var(--proline);
+    aspect-ratio: 16/6.4;
+    background: var(--prompl1);
+}
+.pro-pl2 {
+    box-sizing: border-box;
+    border: 1px solid var(--proline);
+    aspect-ratio: 16/6.4;
+    background: var(--prompl2);
+}
+.pro-pl3 {
+    box-sizing: border-box;
+    border: 1px solid var(--proline);
+    aspect-ratio: 16/6.4;
+    background: var(--prompl3);
+}
+.pro-tab3 {
+    box-sizing: border-box;
+    border-top: 1px solid var(--proline);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.pro-l {
+    padding: 0.9vw;
+    border-right: 1px solid var(--proline);
+    box-sizing: border-box;
+    color: var(--promcl);
+    text-align: center;
+    font-size: 1.5vw;
+}
+.pro-sh {
+    padding: 0.9vw;
+    box-sizing: border-box;
+    color: var(--promcl);
+    text-align: center;
+    font-size: 1.5vw;
+}
+.pro-tab4 {
+    box-sizing: border-box;
+    border-top: 1px solid var(--proline);
+    padding: 0.9vw;
+}
+.pro-stab4 {
+    border: 1px solid var(--proline);
+    box-sizing: border-box;
+    aspect-ratio: 16/4;
+    background: var(--prospic) no-repeat;
+}
+.pro-tab5 {
+    box-sizing: border-box;
+    border-top: 1px solid var(--proline);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.pro-hm {
+    padding: 1vw 0vw 1vw 0vw;
+    text-align: center;
+    text-decoration: none;
+    color: var(--profont);
+    border-right: 1px solid var(--proline);
+    box-sizing: border-box;
+}
+.pro-hm:hover {
+    background-color: var(--promcl);
+    color: var(--prosfont);
+}
+.pro-gl {
+    padding: 1vw 0vw 1vw 0vw;
+    text-align: center;
+    text-decoration: none;
+    color: var(--profont);
+    border-right: 1px solid var(--proline);
+    box-sizing: border-box;
+}
+.pro-gl:hover {
+    background-color: var(--promcl);
+    color: var(--prosfont);
+}
+.pro-dc {
+    padding: 1vw 0vw 1vw 0vw;
+    text-align: center;
+    text-decoration: none;
+    color: var(--profont);
+    border-right: 1px solid var(--proline);
+    box-sizing: border-box;
+}
+.pro-dc:hover {
+    background-color: var(--promcl);
+    color: var(--prosfont);
+}
+.pro-fb {
+    padding: 1vw 0vw 1vw 0vw;
+    text-align: center;
+    text-decoration: none;
+    color: var(--profont);
+}
+.pro-fb:hover {
+    background-color: var(--promcl);
+    color: var(--prosfont);
+}
