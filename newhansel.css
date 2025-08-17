@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+@font-face {
+    font-family: "OtherHand";
+    src: url("https://fuylaundry-94.github.io/noname/OtherHand.otf") format("opentype");
+}
+@font-face {
+    font-family: "laimue";
+    src: url("https://fuylaundry-94.github.io/noname/CalligraphrRegular-mL15m.ttf") format("truetype");
+}
+:root {
+    --nh-mpic: url(https://iili.io/F3BHp9f.jpg);
+    --nh-ms1: url(https://iili.io/F3CQnEJ.jpg) center/cover;
+    --nh-ms2: url(https://iili.io/F3CQnEJ.jpg) center/cover;
+    --nh-ms3: url(https://iili.io/F3CQnEJ.jpg) center/cover;
+    --nh-01p: url(https://iili.io/F3o7Z37.jpg) center/cover;
+    --nh-b1: url(https://iili.io/F3zTMcF.jpg);
+    --nh-b2: url(https://iili.io/F3zTYwx.jpg);
+    --n5-bg: url(https://iili.io/F3zT16P.jpg);
+}
+.new-pcon {
+    width: 100%;
+    margin: auto;
+    background: black;
+    color: white;
+    box-sizing: border-box;
+    display: grid;
+    gap: 3rem;
+}
+.new-phead {
+    padding: 2rem 5rem 2rem 5rem;
+    aspect-ratio: 16/9.3;
+    display: flex;
+    align-items: center;
+    background-image: 
+    linear-gradient(to top, black 0%, transparent 50%),
+    var(--nh-mpic);
+    background-size: var(--nh-mpics);
+    background-position: var(--nh-mpicp);
+    background-repeat: no-repeat;
+}
+.new-ptitle {
+    font: 9vw "OtherHand";
+    line-height: 1;
+    text-shadow: -3px 3px 10px #00000056;
+}
+.new-pinfo {
+    margin-top: -3.5rem;
+    text-align: center;
+    font:1.2vw "Prompt";
+    font-weight: 200;
+    line-height: 1.4;
+    letter-spacing: 0.7px;
+}
+.new-pinfo span {
+    font-weight: 400;
+}
+.new-ppic3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+}
+.new-pp1 {
+    width: 100%;
+    aspect-ratio: 16/10;
+    background: var(--nh-ms1) no-repeat;
+}
+.new-pp2 {
+    width: 100%;
+    aspect-ratio: 16/10;
+    background: var(--nh-ms2) no-repeat;
+}
+.new-pp3 {
+    width: 100%;
+    aspect-ratio: 16/10;
+    background: var(--nh-ms3) no-repeat;
+}
+.new-p01 {
+    padding: 0rem 5rem 0rem 5rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 1.8rem;
+
+}
+.new-p01-l {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font: 200 1.2vw "Prompt";
+}
+.new-papp {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    text-align: justify;
+    letter-spacing: 0.7px;
+    line-height: 1.6;
+}
+.new-papp div {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    padding: 0rem 1.3rem 0.3rem 1.3rem;
+    font: 3vw "OtherHand";
+    letter-spacing: 3px;
+}
+.new-pper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    text-align: justify;
+    letter-spacing: 0.7px;
+    line-height: 1.6;
+}
+.new-pper div {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    padding: 0rem 1.3rem 0.3rem 1.3rem;
+    font: 3vw "OtherHand";
+    letter-spacing: 3px;
+}
+.new-p01-r {
+    background: var(--nh-01p) no-repeat;
+}
+.new-p02 {
+    background: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    border: 1px solid white;
+    margin-top: 1.8rem;
+}
+.pcael {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid white;
+}
+.c-phead {
+    font: 1.4vw "OtherHand";
+    padding: 2rem;
+    text-align: center;
+    line-height: 1.4;
+    background-image: 
+    linear-gradient(to top, black 0%, transparent 100%),
+    var(--nh-b1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.c-phead div {
+    font-size: 1.9rem;
+}
+.c-ptext {
+    padding: 0rem 2rem 2rem 2rem;
+    font: 1.1vw "Prompt";
+    font-weight: 200;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    text-align: center;
+}
+.n-pwing {
+    display: flex;
+    flex-direction: column;
+}
+.n-phead {
+    font: 1.4vw "OtherHand";
+    padding: 2rem;
+    text-align: center;
+    line-height: 1.4;
+    background-image: 
+    linear-gradient(to top, black 0%, transparent 100%),
+    var(--nh-b2);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.n-phead div {
+    font-size: 1.9rem;
+}
+.nw-ptext {
+    padding: 0rem 2rem 2rem 2rem;
+    font: 1.1vw "Prompt";
+    font-weight: 200;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    text-align: center;
+}
+.new-p03 {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 5rem 0rem 5rem;
+}
+.new-pbio {
+    font: 200 1.2vw "Prompt";
+    text-align: justify;
+    letter-spacing: 0.7px;
+    line-height: 1.6;
+}
+.new-pbio div {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    padding: 0rem 1.3rem 0.3rem 1.3rem;
+    font: 3vw "OtherHand";
+    letter-spacing: 3px;
+}
+.new-pbio span {
+   font-weight: 400;
+}
+.new-p04 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem 5rem 0rem 5rem;
+}
+.new-prs {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    padding: 0rem 1.3rem 0.3rem 1.3rem;
+    font: 3vw "OtherHand";
+   
+    letter-spacing: 3px;
+}
+.new-pm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2vw;
+    letter-spacing: 0.7px;
+    justify-content: space-between;
+}
+.m-pcon{
+    width: fit-content;
+    margin-bottom: 0.4vw;
+    display: flex;
+    gap: 0.6rem;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 1.4rem 0.3rem 0.4rem;
+    border-radius: 80px;
+    border: 1px solid #666666;
+    background: linear-gradient(to right, #000000 0%,#474747 50%, #000000 100%);
+}
+.m-pcon-l {
+    width: 3.2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 1px solid #666666;
+    background: var(--mconlpic) center/cover no-repeat;
+}
+.m-pcon-r {
+    text-align: center;
+    min-width: 0;
+    font: 200 0.95vw "Prompt";
+    line-height: 1.5;
+}
+.m-pcon-r div {
+    font-weight: 400;
+    font-size: 1.03vw;
+}
+.new-p5 {
+    padding: 0rem 5rem 2rem 5rem;
+    background-image: 
+    linear-gradient(to bottom, black 0%, transparent 100%),
+    var(--n5-bg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.new-pmore {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    font: 3vw "OtherHand";
+    letter-spacing: 3px;
+}
+.more-pcon {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.3rem;
+    gap: 1.2vw;
+}
+.m-pst {
+    width: 100%;
+    aspect-ratio: 9/13;
+    background: black;
+    border-radius: 16px;
+    border: 1px solid #666666;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.m-psth {
+    aspect-ratio: 16/10;
+    background-image: 
+    linear-gradient(to top, black 0%, transparent 80%),
+    var(--mhpic);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 16px;
+
+}
+.m-psth div {
+    font: 1.8vw "OtherHand";
+    padding: 1.2rem;
+}
+.m-pstt-con {
+    aspect-ratio: 16/10.3;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    mask: linear-gradient(to bottom black 70%, transparent 108%); 
+    -webkit-mask: linear-gradient(to bottom, black 70%, transparent 108%);
+}
+.m-pstt {
+    font: 200 1.1vw "Prompt";
+    line-height: 1.4;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+}
+.new-pbt {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.new-pbt img {
+    width: 12vw;
+}
