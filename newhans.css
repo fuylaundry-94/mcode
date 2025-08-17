@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+@font-face {
+    font-family: "LICHTNER";
+    src: url("https://fuylaundry-94.github.io/noname/LICHTNER.TTF") format("truetype");
+}
+@font-face {
+    font-family: "road race";
+    src: url("https://fuylaundry-94.github.io/noname/road-race-road-race-regular-400.ttf") format("truetype");
+}
+@font-face {
+    font-family: "vivaldi";
+    src: url("https://fuylaundry-94.github.io/noname/VIVALDII.TTF") format("truetype");
+}
+:root {
+    --nh-mpic: url(https://iili.io/F3BHp9f.jpg);
+    --nh-ms1: url(https://iili.io/F3CQnEJ.jpg) center/cover;
+    --nh-ms2: url(https://iili.io/F3CQnEJ.jpg) center/cover;
+    --nh-ms3: url(https://iili.io/F3CQnEJ.jpg) center/cover;
+    --nh-01p: url(https://iili.io/F3o7Z37.jpg) center/cover;
+    --nh-b1: url(https://iili.io/F3zTMcF.jpg);
+    --nh-b2: url(https://iili.io/F3zTYwx.jpg);
+    --n5-bg: url(https://iili.io/F3zT16P.jpg);
+}
+.new-con {
+    width: 100%;
+    margin: auto;
+    background: black;
+    color: white;
+    box-sizing: border-box;
+    display: grid;
+    gap: 3rem;
+}
+.new-head {
+    padding: 2rem 5rem 2rem 5rem;
+    aspect-ratio: 16/9.3;
+    display: flex;
+    align-items: center;
+    background-image: 
+    linear-gradient(to top, black 0%, transparent 50%),
+    var(--nh-mpic);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.new-title {
+    font: 9vw "vivaldi";
+    line-height: 1;
+    text-shadow: -3px 3px 10px #00000056;
+}
+.new-info {
+    margin-top: -3.5rem;
+    text-align: center;
+    font:1.2vw "Prompt";
+    font-weight: 200;
+    line-height: 1.4;
+    letter-spacing: 0.7px;
+}
+.new-info span {
+    font-weight: 400;
+}
+.new-pic3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+}
+.new-p1 {
+    width: 100%;
+    aspect-ratio: 16/10;
+    background: var(--nh-ms1) no-repeat;
+}
+.new-p2 {
+    width: 100%;
+    aspect-ratio: 16/10;
+    background: var(--nh-ms2) no-repeat;
+}
+.new-p3 {
+    width: 100%;
+    aspect-ratio: 16/10;
+    background: var(--nh-ms3) no-repeat;
+}
+.new-01 {
+    padding: 0rem 5rem 0rem 5rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 1.8rem;
+
+}
+.new-01-l {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font: 200 1.2vw "Prompt";
+}
+.new-app {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    text-align: justify;
+    letter-spacing: 0.7px;
+    line-height: 1.6;
+}
+.new-app div {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    padding: 0rem 1.3rem 0.3rem 1.3rem;
+    font: 3vw "LICHTNER";
+    border-bottom: 2px solid #ffffff31;
+    letter-spacing: 3px;
+}
+.new-per {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    text-align: justify;
+    letter-spacing: 0.7px;
+    line-height: 1.6;
+}
+.new-per div {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    padding: 0rem 1.3rem 0.3rem 1.3rem;
+    font: 3vw "LICHTNER";
+    border-bottom: 2px solid #ffffff31;
+    letter-spacing: 3px;
+}
+.new-01-r {
+    background: var(--nh-01p) no-repeat;
+}
+.new-02 {
+    background: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    border: 1px solid white;
+    margin-top: 1.8rem;
+}
+.cael {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid white;
+}
+.c-head {
+    font: 1.38vw "road race";
+    padding: 2rem;
+    text-align: center;
+    line-height: 1.4;
+    background-image: 
+    linear-gradient(to top, black 0%, transparent 100%),
+    var(--nh-b1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.c-head div {
+    font-size: 1.7rem;
+}
+.c-text {
+    padding: 0rem 2rem 2rem 2rem;
+    font: 1.1vw "Prompt";
+    font-weight: 200;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    text-align: center;
+}
+.n-wing {
+    display: flex;
+    flex-direction: column;
+}
+.n-head {
+    font: 1.38vw "road race";
+    padding: 2rem;
+    text-align: center;
+    line-height: 1.4;
+    background-image: 
+    linear-gradient(to top, black 0%, transparent 100%),
+    var(--nh-b2);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.n-head div {
+    font-size: 1.7rem;
+}
+.nw-text {
+    padding: 0rem 2rem 2rem 2rem;
+    font: 1.1vw "Prompt";
+    font-weight: 200;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    text-align: center;
+}
+.new-03 {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 5rem 0rem 5rem;
+}
+.new-bio {
+    font: 200 1.2vw "Prompt";
+    text-align: justify;
+    letter-spacing: 0.7px;
+    line-height: 1.6;
+}
+.new-bio div {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    padding: 0rem 1.3rem 0.3rem 1.3rem;
+    font: 3vw "LICHTNER";
+    border-bottom: 2px solid #ffffff31;
+    letter-spacing: 3px;
+}
+.new-bio span {
+   font-weight: 400;
+}
+.new-04 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem 5rem 0rem 5rem;
+}
+.new-rs {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    padding: 0rem 1.3rem 0.3rem 1.3rem;
+    font: 3vw "LICHTNER";
+    border-bottom: 2px solid #ffffff31;
+    letter-spacing: 3px;
+}
+.new-m {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2vw;
+    letter-spacing: 0.7px;
+    justify-content: space-between;
+}
+.m-con{
+    width: fit-content;
+    margin-bottom: 0.4vw;
+    display: flex;
+    gap: 0.6rem;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 1.4rem 0.3rem 0.4rem;
+    border-radius: 80px;
+    border: 1px solid #666666;
+    background: linear-gradient(to right, #000000 0%,#474747 50%, #000000 100%);
+}
+.m-con-l {
+    width: 3.2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 1px solid #666666;
+    background: var(--mconlpic) center/cover no-repeat;
+}
+.m-con-r {
+    text-align: center;
+    min-width: 0;
+    font: 200 0.95vw "Prompt";
+    line-height: 1.5;
+}
+.m-con-r div {
+    font-weight: 400;
+    font-size: 1.03vw;
+}
+.new-5 {
+    padding: 0rem 5rem 2rem 5rem;
+    background-image: 
+    linear-gradient(to bottom, black 0%, transparent 100%),
+    var(--n5-bg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.new-more {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    font: 3vw "LICHTNER";
+    letter-spacing: 3px;
+}
+.more-con {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.3rem;
+    gap: 1.2vw;
+}
+.m-st {
+    width: 100%;
+    aspect-ratio: 9/13;
+    background: black;
+    border-radius: 16px;
+    border: 1px solid #666666;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.m-sth {
+    aspect-ratio: 16/10;
+    background-image: 
+    linear-gradient(to top, black 0%, transparent 80%),
+    var(--mhpic);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 16px;
+
+}
+.m-sth div {
+    font: 1.7vw "road race";
+    padding: 1.2rem;
+}
+.m-stt-con {
+    aspect-ratio: 16/10.3;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    mask: linear-gradient(to bottom black 70%, transparent 108%); 
+    -webkit-mask: linear-gradient(to bottom, black 70%, transparent 108%);
+}
+.m-stt {
+    font: 200 1.1vw "Prompt";
+    line-height: 1.4;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+}
+.new-bt {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.new-bt img {
+    width: 12vw;
+}
