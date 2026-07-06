@@ -2,7 +2,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 .cc-container {
-    max-width: 800px;
+    width: 100%;
     margin: auto;
     box-sizing: border-box;
     border-radius: 20px;
@@ -11,10 +11,11 @@
     line-height: 1.5;
     color: #252525;
     overflow: hidden;
+    background: #fff;
 }
 
 .cctop {
-    height: 6%;
+    height: 2rem;
     background: #a2b4fe;
     display: flex;
     justify-content: flex-end;
@@ -25,7 +26,7 @@
     width: fit-content;
     display: flex;
     justify-content: space-between;
-    font-size: 1.6vw;
+    font-size: 1.2rem;
     border-left: 5px solid #6a7bc4;
 }
 
@@ -35,8 +36,8 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
 }
 
 .cctap2 {
@@ -45,8 +46,8 @@
     align-items: center;    height: 100%;
     width: 100%;
     border-left: 5px solid #6a7bc4;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
 }
 
 .cctap3 {
@@ -56,8 +57,8 @@
     height: 100%;
     width: 100%;
     border-left: 5px solid #6a7bc4;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
 }
 
 .cccon {
@@ -102,7 +103,7 @@
     font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.2px;
-    padding: 0 3rem 0rem 3rem;
+    padding: 0 1.8rem 0rem 1.8rem;
 }
 
 .cctext {
@@ -179,7 +180,7 @@
 .cctext-2code p {
     font: 1.05rem 'Mali', serif; 
     font-weight: 400;
-    padding: 1.5rem 3rem 1.5rem 3rem;
+    padding: 1.5rem 1.8rem 1.5rem 1.8rem;
     line-height: 1.7;
     letter-spacing: 0.2px;
     color: #f5a3de;
@@ -191,7 +192,7 @@
 .cctext-howto p {
     font: 1.05rem 'Mali', serif; 
     font-weight: 400;
-    padding: 1.5rem 3rem 1.5rem 3rem;
+    padding: 1.5rem 1.8rem 1.5rem 1.8rem;
     line-height: 1.7;
     letter-spacing: 0.2px;
     color: #1e1a27;
