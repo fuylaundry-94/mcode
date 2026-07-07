@@ -175,7 +175,7 @@
     margin-top: -2rem;
 }
 .cctext-2code {
-    padding: 3rem 2.3rem 1.5rem 2.3rem;
+    padding: 3.5rem 3rem 2rem 3rem;
     line-height: 1.7;
     color: #f5a3de;
 
@@ -189,7 +189,7 @@
 }
 
 .cctext-howto {
-    padding: 3rem 2.3rem 1.5rem 2.3rem;
+    padding: 3.5rem 3rem 2rem 3rem;
     line-height: 1.7;
     color: #1e1a27;
 }
@@ -222,7 +222,6 @@
     width: fit-content;
     font: 1.05rem 'Mali', serif; 
     font-weight: 400;
-    padding: 0 1.8rem 1rem 1.8rem;
     letter-spacing: 0.2px;
     color: #1e1a27;
 }
