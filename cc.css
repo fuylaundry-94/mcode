@@ -43,7 +43,8 @@
 .cctap2 {
     display: flex;
     justify-content: center;
-    align-items: center;    height: 100%;
+    align-items: center;    
+    height: 100%;
     width: 100%;
     border-left: 5px solid #6a7bc4;
     padding-left: 0.9rem;
