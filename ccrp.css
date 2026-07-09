@@ -189,7 +189,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: inherit;
+    color: inherit !important;
     text-decoration: none;
     cursor: pointer;
 }
