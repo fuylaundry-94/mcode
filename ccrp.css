@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Fredoka:wght@300;400;500;600;700&family=Bai+Jamjuree:wght@300;400;500;600&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+.ccrp-container {
+    max-width: 780px;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 5px solid #403652;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    color: #252525;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+}
+
+.ccrp-top {
+    height: 2rem;
+    background: #a2b4fe;
+    display: flex;
+    justify-content: flex-end;
+    color: #ffffff;
+}
+
+.ccrp-tap {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    border-left: 5px solid #6a7bc4;
+}
+
+.ccrptap1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.ccrptap2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100%;
+    width: 100%;
+    border-left: 5px solid #6a7bc4;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.ccrptap3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-left: 5px solid #6a7bc4;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.ccrp-con {
+    background: #fff;
+    border-top: 5px solid #403652;
+}
+.ccrp-body {
+    margin: auto;
+    margin: 2%;
+    border: 5px solid #403652;
+    background: 
+    linear-gradient(90deg,rgba(255,255,255,.20) 1px, transparent 1px),
+    linear-gradient(rgba(255,255,255,.20) 1px, transparent 1px),
+    linear-gradient(180deg,#9d95dd 0%,#a99be3 30%,#b4a4e7 65%,#c7b2ec 100%);
+    background-size: 32px 32px, 32px 32px, 100% 100%;
+    position: relative;
+    font-family: 'Mali', serif; 
+    transform: translateZ(0);
+}
+
+.ccrp-dt {
+    margin: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    row-gap: 30px;
+    align-items: center;
+}
+.ccrp-hdt {
+    grid-column: span 2;
+    height: 100%;
+    background-image: var(--imghd);
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.ccrp-hdtr {
+    grid-column: span 2;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+.ccrp-flx {
+    background: #fff;
+    border-radius: 20px;
+    padding: 5%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: relative;
+}
+.ccrp-lf {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    color: #354777;
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+}
+.icon {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+.login {
+    font: 1.05rem 'Fredoka', serif;
+    border: 1px solid #d8d8d8;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-radius: 5px;
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    width: 100%;
+}
+
+.hd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.hdtt {
+    color: #fff;
+    border-radius: 30px;
+    background: #6a7bc4;
+    padding: 0.5rem;
+    width: fit-content;
+    margin: 0;
+    font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.ttt {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: #6a7bc4;
+    color: #fff;
+    padding: .4rem .8rem;
+    border-radius: 10px;
+    font: 0.9rem 'Fredoka', serif;
+    line-height: 1.5;
+
+    white-space: nowrap;
+
+    opacity: 0;
+    transition: .2s;
+    z-index: 100;
+}
+.hdtt:hover .ttt{
+    transform: translate(-50%, -0%) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.hdtt-2 {
+    color: #fff;
+    border-radius: 30px;
+    background: #6a7bc4;
+    padding: 0.5rem;
+    width: fit-content;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+
+.ccrp-gd {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.ccrp-gd:hover { z-index: 20; }
+
+.ccrp-f {
+    margin: auto;
+    background: #fffdec;
+    border-radius: 20px;
+    overflow: hidden;
+    color: #ce4f8e;
+    width: 100%;
+    aspect-ratio: 10/15;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.ccrp-ft {
+    height: 2.3rem;
+    background: linear-gradient(180deg,#f5c0ea 0%,#ebb6e0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 3px dashed #e27baf;
+
+}
+.ccrp-img {
+    margin: auto;
+    margin-top: -0.6rem;
+    background-image: var(--imgcd);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90%;
+}
+
+.ccrp-f:hover { 
+    opacity: 1; 
+    transform: translate(0%, -9px);
+}
+
+.ccrp-fxp {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+
+    width: 82%; 
+    height: auto; 
+    max-height: 85%;
+    max-width: 520px; 
+    
+    background-color: #fffdec;
+    color: #4a3b32;
+    border-radius: 20px;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s; 
+    z-index: 9999 !important; 
+    pointer-events: none;
+    
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.26);
+    border: 5px solid #403652;
+}
+
+.ccrphead {
+    height: 2.5rem;
+    background: linear-gradient(180deg,#f1bfe7 0%,#567fef 100%);
+    border-bottom: 5px solid #403652;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+.ccrphead01 {
+    border: 5px solid #403652;
+    border-radius: 180px;
+    display: flex;
+    aspect-ratio: 1/1;
+    height: 40%;
+    background: #e9fd8e;
+}
+.ccrphead02 {
+    border: 5px solid #403652;
+    border-radius: 180px;
+    display: flex;
+    aspect-ratio: 1/1;
+    height: 40%;
+    margin-right: 1rem;
+    background: #ec9ed6;
+}
+
+.ccrp-gd:hover .ccrp-fxp {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.ccrp-fxpcon {
+    margin: 1rem;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+    gap: 15px;
+    background: #fffdec;
+}
+
+.fx-img {
+    width: 100%;
+    max-width: 200px; 
+    aspect-ratio: 2 / 3;
+    background-image: var(--imgcd);
+    background-size: 120%;
+    background-position: center;
+}
+
+.fx-dt {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto; 
+    text-align: left;
+}
+
+.fx-dt h2 {
+    font-family: 'Fredoka', 'Mali', sans-serif; 
+    font-size: 1.8rem; 
+    line-height: 1.2; 
+    margin: 0 0 10px 0 !important;
+    color: #7989ca; 
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.fx-dtr {
+    width: fit-content;
+    font-family: 'Mali', sans-serif; 
+    font-size: 0.9rem;
+    background: #ffdee3;
+    border-radius: 30px;
+    color: #ee8192;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    margin: 0 0 15px 0 !important;
+    font-weight: 600;
+    line-height: 1.3; 
+}
+
+.fx-dtrs {
+    font-family: 'Bai Jamjuree', sans-serif; 
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #615147;
+    font-weight: 400;
+    margin: 0 ;
+}
+
+.ccrp-gd::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: #7280b8b0;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.ccrp-gd:hover::after { opacity: 1; }
+
+.ccbt-2 {
+    margin: auto;
+    margin-top: -1rem;
+    max-width: 200px;
+    aspect-ratio: 16/5;
+    background-image: url(https://i.postimg.cc/6p8Rv3yk/IMG-7554.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.sticker{
+    position: absolute;
+    pointer-events: none; 
+}
+
+.st {
+    width:15%;
+    top: -20;
+    left: 0;
+    filter: drop-shadow(2px 3px 5px rgba(0,0,0,.2));
+}
+
+.nd{
+    width:15%;
+    top: 113;
+    left: 340;
+    filter: drop-shadow(2px 3px 5px rgba(0,0,0,.2));
+}
+
+.rd {
+    width:15%;
+    top: 128;
+    right:0;
+    filter: drop-shadow(2px 3px 5px rgba(0,0,0,.2));
+}
