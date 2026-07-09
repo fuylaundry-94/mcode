@@ -186,6 +186,12 @@
     width: fit-content;
     margin: 0;
     font-size: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -387,21 +393,15 @@
 
 .st {
     width:15%;
-    top: -20;
-    left: 0;
     filter: drop-shadow(2px 3px 5px rgba(0,0,0,.2));
 }
 
 .nd{
     width:15%;
-    top: 113;
-    left: 340;
     filter: drop-shadow(2px 3px 5px rgba(0,0,0,.2));
 }
 
 .rd {
     width:15%;
-    top: 128;
-    right:0;
     filter: drop-shadow(2px 3px 5px rgba(0,0,0,.2));
 }
