@@ -218,7 +218,7 @@
 
 .ccrp-ft {
     height: 2.3rem;
-    background: linear-gradient(180deg,#f5c0ea 0%,#ebb6e0 100%);
+    background: linear-gradient(180deg,#ffd6f7 0%,#fcc6f1 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -340,9 +340,9 @@
     width: fit-content;
     font-family: 'Mali', sans-serif; 
     font-size: 0.9rem;
-    background: #ffdee3;
+    background: #ffdbf8;
     border-radius: 30px;
-    color: #ee8192;
+    color: #e27baf;
     padding: 0.3rem 1rem 0.3rem 1rem;
     margin: 0 0 15px 0 !important;
     font-weight: 600;
