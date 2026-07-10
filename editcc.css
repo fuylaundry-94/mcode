@@ -1,7 +1,5 @@
 .editcc {
-  display : flex;
-  justify-content : flex-start;
-  gap: 10px;
+  display : inline-block;
   color: #382d46;
   margin-bottom: .5rem;
 }
