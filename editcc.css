@@ -1,0 +1,26 @@
+.editcc {
+  display : flex;
+  justify-content : flex-start;
+  gap: 10px;
+  color: #382d46;
+  margin-bottom: .5rem;
+}
+
+.editcc span {
+  color: #ffa9e7;
+}
+
+.editcc-2 {
+    border-radius: 30px;
+    background: #ffa9e7;
+    padding: 0rem;
+    width: fit-content;
+    margin: 0;
+    padding: 0 0.4rem 0 0.4rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit !important;
+    text-decoration: none;
+    cursor: pointer;
+}
